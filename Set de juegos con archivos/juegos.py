@@ -1,9 +1,3 @@
-def guardar_datos(diccionario_jugadores, nombre, juego, fecha):																																															# función que guarda los datos de un jugador
-	if (not nombre in diccionario_jugadores):
-		diccionario_jugadores[nombre] = [{'Juego' : juego, 'Fecha' : fecha}]
-	else:
-		diccionario_jugadores[nombre] += [{'Juego' : juego, 'Fecha' : fecha}]
-
 def main(args):
 	import AhorcadoConFunciones, reversegam, tictactoeModificado, json
 	from datetime import datetime
