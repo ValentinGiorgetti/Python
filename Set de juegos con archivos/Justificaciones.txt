@@ -1,0 +1,32 @@
+Estructura de datos utilizada:
+
+La estructura de datos que elegí para el programa fue un diccionario, ya que de esta forma puedo almacenar la información de cada jugador de manera "organizada" y acceder a la información de los mismos a través de sus nombres. Cada jugador tiene asociado una lista de diccionarios, cada uno de esos diccionarios contiene el nombre del juego y la hora en que fue jugado. 
+
+La estructura del diccionario tiene el siguiente formato (la clave es el nombre del jugador y el valor es una lista de diccionarios): {"nombre_del_jugador1" : [{"Juego" : "nombre_del_juego1", "Fecha" : "fecha1"}, {"Juego" : "nombre_del_juego2", "Fecha" : "fecha2"}, ...], "nombre_del_jugador2" : [...], ...}
+
+Ejemplo de la estructura:
+
+{
+  "Valentin": [
+    {
+      "Juego": "Ahorcado",
+      "Fecha": "2020-05-09 a las 14:01"
+    },
+    {
+      "Juego": "Ta - Te - Ti",
+      "Fecha": "2020-05-09 a las 14:02"
+    }
+  ],
+  "Jugador2": [
+    {
+      "Juego": "Ahorcado",
+      "Fecha": "2020-05-09 a las 14:03"
+    }
+  ]
+}
+
+Formato de archivo utilizado:
+
+El formato de archivo que elegí fue JSON, ya que es un formato de texto sencillo para el intercambio de datos, su notación es muy popular, es fácil leerlo, escribirlo y analizarlo, y además este formato es totalmente independiente de Python. JSON permite serializar objetos, es decir, obtener la representación en secuencia de caracteres de un objeto (lista o diccionario), esto se logra con las funciones "dump" y dumps" (se utilizan para convertir un objeto a una cadena JSON). Las funciones que permiten deserializar son "load" y "loads", lo que hacen es convertir la cadena en formato JSON en un objeto (lista o diccionario).
+
+Como la mayoria de los lenguajes de programación tienen soporte para JSON, la interacción con otros programas se logra fácilmente. Además, no tendremos problemas de seguridad relacionados con el archivo, ya que los archivos JSON no pueden contener código malicioso (sólo es un archivo de texto con un formato determinado). 
